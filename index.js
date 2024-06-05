@@ -71,7 +71,7 @@ exports.docWritten${count} = onDocumentWritten("collection${count}/{doc}", (even
 `
 
 for (let i = 0; i < ONDOCUMENTWRITTEN_FUNCTION_AMOUNT; i++) {
-    const c = i < 10 ? `0${i} ` : i;
+    const c = i < 10 ? `0${i}` : i;
     _onDocumentWrittenFunc += onDocumentWrittenFunc(c)
 }
 

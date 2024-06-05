@@ -17,3 +17,15 @@ Error: There was an error deploying functions:
 - Error Failed to update function helloWorld27 in region europe-west1
 - Error Failed to update function helloWorld09 in region europe-west1
 ```
+
+## Notes
+
+`functionsv2deployoptimizations` is enabled
+
+Functions being deployed
+
+- 5x 2nd gen onDocumentCreated
+- 5x 2nd gen onDocumentWritten
+- 60x 2nd gen onRequest
+  - 40 of which are ungrouped
+  - 20 of which are grouped

@@ -1,4 +1,5 @@
 // Run this script to automatically generate the functions
+// It's not pretty, but it should get the job done
 
 const { writeFileSync } = require("node:fs")
 const path = require("path")
@@ -95,7 +96,7 @@ for (let i = 0; i < ONREQUEST_FUNCTION_AMOUNT; i++) {
 
 finalStr += _onRequestFunc
 
-// ---- Grouped function ----
+// ---- Grouped  onRequest function ----
 let _groupedFuncInner = ''
 for (let i = 0; i < GROUPED_FUNCTION_AMOUNT; i++) {
     const c = i < 10 ? `0${i}` : i;
